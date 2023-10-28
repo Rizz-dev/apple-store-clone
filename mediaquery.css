@@ -1,0 +1,105 @@
+
+@media screen and (max-width:960px){
+    .grid{
+        display: grid;
+        grid-template-columns:auto auto ;
+    }
+    .flex2{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+   
+}
+ 
+@media screen and (max-width:700px){ 
+    ul {
+        justify-content: space-around;
+    }
+   ul a:nth-child(2){
+    display: none;
+   }
+    ul a:nth-child(3){
+    display: none;
+   }
+    ul a:nth-child(4){
+    display: none;
+   } 
+   ul a:nth-child(5){
+    display: none;
+   } 
+   ul a:nth-child(6){
+    display: none;
+   }
+   ul a:nth-child(7){
+    display: none;
+   } ul a:nth-child(8){
+    display: none;
+   } ul a:nth-child(9){
+    display: none;
+   }
+   ul a:nth-child(10){
+    display: none;
+   }
+    .images-container{
+        height: 300px;
+    }
+    .images-container img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+    .images-container p{
+        font-size: 25px;
+    }
+    .toggle{
+        /* display: ; */
+        display: flex;
+        width: 50%;
+        text-align: center;
+        flex-direction: column;
+        position: absolute;
+        top: 45%;
+        left: 75%;
+        transform: translate(-50%,-50%);     
+        background: rgba(0, 0,0, 0.50);
+        /* background: linear-gradient(); */
+        animation: toggle 0.5s ;
+        /* transition: ; */
+    }
+    ul a:last-child{
+        display:block; 
+       }
+       
+    @keyframes toggle {
+        0%{
+          /* transform:translateY(110px); */
+          transform: translateX(150px);
+        }
+
+    }
+    .toggle a li{
+        padding: 10px;
+    }
+    .toggle a li:hover{
+        border: 1px solid white;
+        box-shadow: inset 2px 1px 10px white;
+    }
+   
+    .grid{
+        display: grid;
+        grid-template-columns:auto;
+        padding: 0;
+    }
+    .flex2{
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0;
+        text-align: center;
+
+    }
+    .right-side{
+        display: none;   
+    }
+
+}
